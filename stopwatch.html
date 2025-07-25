@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="stopwatch-title">Stop Watch</h1>
+
+        <!-- stopwatch display -->
+         <div class="stopwatch-display">
+            <span id="minutes" class="time-digit">00</span><span class="colon">:</span>
+            <span id="seconds" class="time-digit">00</span><span class="colon">.</span>
+            <span id="milliseconds" class="time-digit milliseconds">000</span>
+         </div>
+        <!-- stopwatch controls -->
+        <div class="stopwatch-controls">
+            <button id="startBtn" class="btn btn-start">Start</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>Pause</button>
+            <button id="resetBtn" class="btn btn-reset" disabled>Reset</button>
+            <button id="lapBtn" class="btn btn-lap" disabled>Lap</button>
+        </div>
+
+         <!-- Lap display -->
+            <div class="lap-display">
+                <h2 class="lap-time-title">Lap Times</h2>
+                <ul id="lap" class="lap-list">
+                    <!-- Lap times will be dynamically added here -->
+                </ul>
+            </div>
+    </div>
+</body>
+<script src="src/script.js"></script>
+</html>
